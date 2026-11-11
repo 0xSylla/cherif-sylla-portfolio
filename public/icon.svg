@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Favicon : initiales CS en lettres carrées à angles coupés, rouge corail sur noir, cadre blanc (style néo-brutaliste du site) -->
+  <rect width="64" height="64" fill="#0b0706"/>
+  <rect x="3" y="3" width="58" height="58" fill="none" stroke="#f2eee8" stroke-width="4"/>
+  <!-- C -->
+  <path fill="#e2574c" d="M10 19 L16 13 H29 V20 H17 V44 H29 V51 H16 L10 45 Z"/>
+  <!-- S -->
+  <path fill="#e2574c" d="M38 13 H54 V20 H40 V28 H48 L54 34 V45 L48 51 H34 V44 H47 V35 H39 L33 29 V18 Z"/>
+</svg>
