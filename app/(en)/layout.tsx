@@ -5,7 +5,7 @@ import "../brut.css";
 import { en } from "@/content/en";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cherif-sylla.vercel.app"),
+  metadataBase: new URL("https://cherifsylla.xyz"),
   title: en.meta.title,
   description: en.meta.description,
   alternates: { canonical: "/en", languages: { fr: "/", en: "/en" } },

@@ -147,7 +147,7 @@ export const fr: Contenu = {
     lead:
       "Des pubs vidéo au format UGC, générées par IA : le naturel d'un créateur qui parle face caméra, sans tournage. Pour tester plus d'angles publicitaires, plus vite.",
     cta: "Voir le studio UGC",
-    ctaHref: "https://cherifsylla.xyz",
+    ctaHref: "https://ugc.cherifsylla.xyz",
     son: "Activer le son",
     muet: "Couper le son",
     clips: ["clip-01", "clip-02", "clip-04", "clip-05", "clip-06", "clip-07", "clip-10", "clip-12"],

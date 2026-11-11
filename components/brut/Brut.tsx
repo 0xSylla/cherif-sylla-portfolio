@@ -16,7 +16,7 @@ const STACK: { k: string; href: string; nom: string; teinte: string; fr: [string
   { k: "nextjs", href: "https://nextjs.org", nom: "Next.js", teinte: "#d6d6d6", fr: ["Framework", "Sites et dApps"], en: ["Framework", "Websites and dApps"] },
   { k: "threejs", href: "https://threejs.org", nom: "three.js", teinte: "#2ec4b6", fr: ["3D", "Scènes 3D dans le navigateur"], en: ["3D", "3D scenes in the browser"] },
   { k: "typescript", href: "https://www.typescriptlang.org", nom: "TypeScript", teinte: "#3178c6", fr: ["Langage", "Code typé, front et back"], en: ["Language", "Typed code, front and back"] },
-  { k: "ugc", href: "https://cherifsylla.xyz", nom: "Vidéo IA", teinte: "#e2574c", fr: ["UGC", "Pubs vidéo générées par IA"], en: ["UGC", "AI-generated video ads"] },
+  { k: "ugc", href: "https://ugc.cherifsylla.xyz", nom: "Vidéo IA", teinte: "#e2574c", fr: ["UGC", "Pubs vidéo générées par IA"], en: ["UGC", "AI-generated video ads"] },
 ];
 
 /* Postes, regroupés par « ère » (du plus récent au plus ancien). Sources : CV, dépôt du studio UGC (créé en août 2026). */
@@ -25,7 +25,7 @@ const BSCSCAN = "https://bscscan.com/address/0xc470e8691a9bcdc081db971615060a17b
 const ERES: { fr: Ere[]; en: Ere[] } = {
   fr: [
     { titre: "AI Era", postes: [
-      { entreprise: "AI UGC Studio", role: "Fondateur · créateur UGC IA", dates: "août 2026 – aujourd'hui", desc: "Des pubs vidéo au format UGC générées par IA pour les marques : scripts, voix, montage et déclinaisons pour tester plus d'angles, plus vite.", liens: [{ k: "Web", href: "https://cherifsylla.xyz", label: "cherifsylla.xyz" }] },
+      { entreprise: "AI UGC Studio", role: "Fondateur · créateur UGC IA", dates: "août 2026 – aujourd'hui", desc: "Des pubs vidéo au format UGC générées par IA pour les marques : scripts, voix, montage et déclinaisons pour tester plus d'angles, plus vite.", liens: [{ k: "Web", href: "https://ugc.cherifsylla.xyz", label: "ugc.cherifsylla.xyz" }] },
     ] },
     { titre: "Web3 Era", postes: [
       { entreprise: "Dirac Finance", role: "Ingénieur blockchain principal", dates: "mai 2024 – aujourd'hui", desc: "Conception et déploiement mainnet sur Berachain et Arbitrum : 3 vaults ERC4626 (46 000 $ de TVL record), collection NFT cross-chain LayerZero (100 000 $+ de volume) et son bridge de migration, intégrations DeFi, dApps Next.js et tableaux de bord Dune.", liens: [{ k: "Web", href: "https://dirac.finance", label: "dirac.finance" }, { k: "Scan", href: BERASCAN, label: "Berascan" }] },
@@ -34,7 +34,7 @@ const ERES: { fr: Ere[]; en: Ere[] } = {
   ],
   en: [
     { titre: "AI Era", postes: [
-      { entreprise: "AI UGC Studio", role: "Founder · AI UGC creator", dates: "Aug 2026 – now", desc: "AI-generated UGC-style video ads for brands: scripts, voice, editing and variations to test more ad angles, faster.", liens: [{ k: "Web", href: "https://cherifsylla.xyz", label: "cherifsylla.xyz" }] },
+      { entreprise: "AI UGC Studio", role: "Founder · AI UGC creator", dates: "Aug 2026 – now", desc: "AI-generated UGC-style video ads for brands: scripts, voice, editing and variations to test more ad angles, faster.", liens: [{ k: "Web", href: "https://ugc.cherifsylla.xyz", label: "ugc.cherifsylla.xyz" }] },
     ] },
     { titre: "Web3 Era", postes: [
       { entreprise: "Dirac Finance", role: "Lead Blockchain Engineer", dates: "May 2024 – now", desc: "End-to-end design and mainnet deployment on Berachain and Arbitrum: 3 ERC4626 vaults ($46,000 peak TVL), a LayerZero cross-chain NFT collection ($100,000+ volume) and its migration bridge, DeFi integrations, Next.js dApps and Dune dashboards.", liens: [{ k: "Web", href: "https://dirac.finance", label: "dirac.finance" }, { k: "Scan", href: BERASCAN, label: "Berascan" }] },
