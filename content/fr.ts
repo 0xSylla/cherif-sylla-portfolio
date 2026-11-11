@@ -159,7 +159,7 @@ export const fr: Contenu = {
     lead:
       "Deux ans et demi en DeFi, du contrat au tableau de bord. Ingénieur blockchain principal chez Dirac Finance, protocole DeFi qui a levé plus d'un million de dollars. Chaque bloc ci-dessous se vérifie on-chain ou sur GitHub.",
     prod: "En production",
-    projets: "Projets open source",
+    projets: "Projets personnels",
     verifier: "Vérifier",
     stackTitre: "Ma stack",
     blocs: [

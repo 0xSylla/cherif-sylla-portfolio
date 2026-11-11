@@ -136,7 +136,7 @@ export const en: Contenu = {
     lead:
       "Two and a half years in DeFi, from contract to dashboard. Lead blockchain engineer at Dirac Finance, a DeFi protocol that raised over $1M. Every block below can be checked on-chain or on GitHub.",
     prod: "In production",
-    projets: "Open-source projects",
+    projets: "Personal projects",
     verifier: "Verify",
     stackTitre: "My stack",
     blocs: [
