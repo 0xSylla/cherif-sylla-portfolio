@@ -262,3 +262,32 @@ a:hover > .b-fl { transform: translate(2px, -2px); }
 .b-diplome__an { font: 500 .78rem var(--f-mono), monospace; color: var(--b-rouge); }
 .b-diplome .b-ere-carte__role { margin: 0; }
 @media (prefers-reduced-motion: reduce) { .b-ere-noeud, .b-ere-carte, .b-ere-carte__liens a { transition: none; } }
+
+/* ——— Sécurité (onglet Blockchain) ——— */
+.b-secu-chiffres { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 0 0 24px; padding: 0; list-style: none; }
+@media (min-width: 860px) { .b-secu-chiffres { grid-template-columns: repeat(4, 1fr); } }
+.b-secu-chiffres li { display: grid; gap: 2px; padding-left: 12px; border-left: 3px solid var(--b-rouge); }
+.b-secu-chiffres strong { font: 700 clamp(1.6rem, 4vw, 2.4rem) var(--f-brut), sans-serif; color: var(--b-blanc); }
+.b-secu-chiffres span { color: var(--b-gris); font-size: .76rem; line-height: 1.35; }
+.b-secu-methode { --bord: #3a3a3a; display: grid; gap: 14px; margin: 0 0 24px; padding: 0; list-style: none; }
+@media (min-width: 700px) { .b-secu-methode { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .b-secu-methode { grid-template-columns: repeat(4, 1fr); } }
+.b-secu-methode .b-ere-carte { padding: 1.1rem 1.2rem; display: grid; gap: .3rem; align-content: start; }
+.b-secu-methode .b-ere-carte__nom { margin: 0; font-size: 1rem; }
+.b-secu-liste { --bord: #3a3a3a; display: grid; gap: 14px; margin: 0 0 18px; padding: 0; list-style: none; }
+@media (min-width: 700px) { .b-secu-liste { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .b-secu-liste { grid-template-columns: repeat(3, 1fr); } }
+.b-secu-faille { display: flex; flex-direction: column; gap: .35rem; padding: 1.1rem 1.2rem; }
+.b-secu-faille__tete { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.b-secu-faille .b-ere-carte__nom { margin: 0; font-size: 1rem; }
+.b-secu-faille .b-ere-carte__role { margin: 0; font-size: .74rem; color: var(--b-gris); }
+.b-secu-faille__impact { margin: .2rem 0 0; color: var(--b-blanc); font-size: .85rem; }
+.b-secu-faille__pied { margin: auto 0 0; padding-top: .5rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; font: 400 .7rem var(--f-mono), monospace; color: var(--b-gris); }
+.b-secu-statut { color: var(--b-texte); }
+.b-secu-statut::before { content: "● "; color: #2ee59d; }
+.b-secu-gravites { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
+.b-grav { font: 700 .62rem var(--f-mono), monospace; padding: 2px 6px; white-space: nowrap; text-transform: uppercase; }
+.b-grav--high { background: var(--b-rouge); color: #fff; }
+.b-grav--medium { background: #f0a43a; color: #120a02; }
+.b-grav--low { background: #3a3a3a; color: var(--b-blanc); }
+.b-secu-propres { margin-bottom: 8px; line-height: 1.7; }

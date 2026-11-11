@@ -5,6 +5,7 @@ import { Mot, Nav, Video } from "./Vivant";
 import { RESEAUX } from "./Glyphes";
 import Stack from "./Stack";
 import Onglets from "./Onglets";
+import Securite from "./Securite";
 import Experience, { type Ere } from "./Experience";
 
 const STACK: { k: string; href: string; nom: string; teinte: string; fr: [string, string]; en: [string, string] }[] = [
@@ -126,6 +127,7 @@ export default function Brut({ c }: { c: Contenu }) {
               </li>
             ))}
           </ul>
+          <Securite fr={fr} />
           <h3 className="b-sous">{c.chain.projets}</h3>
           <ul className="b-grille">
             {c.chain.side.map(b => (
