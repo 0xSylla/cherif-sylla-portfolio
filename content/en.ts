@@ -145,7 +145,7 @@ export const en: Contenu = {
         chiffre: "$46,000",
         chiffreLabel: "combined peak TVL",
         texte:
-          "Three upgradeable vaults (UUPS proxy) on mainnet, wired into Stryke, Kodiak, Dolomite, Orderly and Infrared staking, with trading cycles run as a state machine. Then the move to a modular architecture adding Aave and Morpho.",
+          "The problem: on Berachain, yield was scattered across protocols, and users had to move funds and follow every trading cycle by hand. The fix: three upgradeable vaults (UUPS proxy) with a single deposit, wired into Stryke, Kodiak, Dolomite, Orderly and Infrared staking, with trading cycles run by a state machine. Then a modular architecture to add Aave and Morpho.",
       },
       {
         ...b[1],
@@ -153,22 +153,22 @@ export const en: Contenu = {
         chiffre: "$100,000+",
         chiffreLabel: "trading volume",
         texte:
-          "A LayerZero ONFT721A collection on Arbitrum, then a custom migration bridge to Berachain that keeps ownership intact. Multi-tier presale, ERC-2981 royalties, affiliate revenue sharing, gas-optimised batch minting.",
+          "The problem: moving a live collection from Arbitrum to Berachain without holders losing their NFTs. The fix: a LayerZero ONFT721A collection and a custom migration bridge that keeps ownership intact. Plus a multi-tier presale, ERC-2981 royalties, affiliate revenue sharing and gas-optimised batch minting.",
       },
       {
         ...b[2],
         titre: "ICO contract",
         chiffreLabel: "on-chain purchases",
         texte:
-          "Chainlink oracle pricing, backend authorisation via ECDSA signatures, payment in BNB or ERC20. Two-step admin transfer, separate roles, emergency withdrawal, a vesting module, and the presale dApp.",
+          "The problem: selling a token on-chain at a fair, live price, only to approved buyers, without investors dumping everything at launch. The fix: USD pricing via a Chainlink oracle, ECDSA signature authorisation, BNB or ERC20 payments and a vesting module. On the security side: two-step admin transfer, separate roles, emergency withdrawal. Plus the presale dApp.",
       },
     ],
     side: [
-      { ...s[0], titre: "Yield-routing vault", texte: "An ERC4626 vault that spreads deposits across several protocols and rebalances towards the best APY without breaking the share price." },
-      { ...s[1], titre: "No-loss cross-chain raffle", texte: "Yield from deposits funds the prize while principal stays fully redeemable. Cross-chain aggregation via CCIP, verifiable draws via VRF." },
-      { ...s[2], titre: "Nestable NFTs", texte: "ERC-721 characters wearing ERC-1155 gear through ERC-6551 token-bound accounts, with layered image composition." },
-      { ...s[3], contexte: "Anti-bot NFT launchpad", texte: "Signature-gated minting, per-wallet quotas and Merkle-proof allowlists." },
-      { ...s[4], contexte: "On-chain game · Base", texte: "A fully on-chain idle strategy game: run virtual nodes to earn tokens. Diamond architecture, retro CRT interface.", liens: [s[4].liens[0], { label: "Demo", href: s[4].liens[1].href }] },
+      { ...s[0], titre: "Yield-routing vault", texte: "Solves a simple problem: the best yield keeps moving between protocols, and you miss it unless you move your funds yourself. This ERC4626 vault spreads deposits and rebalances on its own towards the best APY, without skewing the share price." },
+      { ...s[1], titre: "No-loss cross-chain raffle", texte: "Solves the flaw of lotteries: almost everyone loses their stake. Here only the yield on deposits funds the prize, principal stays fully redeemable, and the draw is verifiable (Chainlink VRF). Deposits from several chains are pooled via CCIP." },
+      { ...s[2], titre: "Nestable NFTs", texte: "Solves a gap in game NFTs: a character can't own its items, which stay scattered in the wallet. With ERC-6551 token-bound accounts, the character (ERC-721) holds its own gear (ERC-1155): sell the character and the gear goes with it. Its image is composed in layers." },
+      { ...s[3], contexte: "Anti-bot NFT launchpad", texte: "An NFT launchpad built to solve botting during mints, where bots sweep the supply before real collectors get a chance. Signature-gated minting, per-wallet quotas and Merkle-proof allowlists." },
+      { ...s[4], contexte: "On-chain game · Base", texte: "Solves the trust problem of “crypto” games whose rules run on a server. Here all game logic and rewards live on-chain: run virtual nodes to earn tokens. The Diamond architecture (ERC-2535) gets past the contract size limit and lets new features be added. Retro CRT interface.", liens: [s[4].liens[0], { label: "Demo", href: s[4].liens[1].href }] },
     ],
     stack: [
       fr.chain.stack[0],

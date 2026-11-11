@@ -169,7 +169,7 @@ export const fr: Contenu = {
         chiffre: "46 000 $",
         chiffreLabel: "de TVL record, cumulée",
         texte:
-          "Trois vaults évolutifs (proxy UUPS) déployés sur le mainnet, branchés sur Stryke, Kodiak, Dolomite, Orderly et le staking Infrared, avec des cycles de trading sous forme de machine à états. Puis la transition vers une architecture modulaire avec Aave et Morpho.",
+          "Le problème : sur Berachain, le rendement était éparpillé entre plusieurs protocoles, et il fallait déplacer ses fonds et suivre chaque cycle de trading à la main. La solution : trois vaults évolutifs (proxy UUPS) où l'on dépose une seule fois, branchés sur Stryke, Kodiak, Dolomite, Orderly et le staking Infrared, avec des cycles de trading gérés par une machine à états. Puis une architecture modulaire pour ajouter Aave et Morpho.",
         stack: ["Solidity", "ERC4626", "UUPS", "Foundry"],
         adresse: "0x38e64273826B199cdf301E90989C28D10691A30e",
         liens: [
@@ -184,7 +184,7 @@ export const fr: Contenu = {
         chiffre: "100 000 $+",
         chiffreLabel: "de volume d'échanges",
         texte:
-          "Une collection LayerZero ONFT721A sur Arbitrum, puis un bridge de migration sur mesure vers Berachain qui garde la propriété intacte. Prévente à plusieurs niveaux, royalties ERC-2981, partage de revenus pour les affiliés, mint par lots optimisé en gas.",
+          "Le problème : faire passer une collection vivante d'Arbitrum à Berachain sans que les détenteurs perdent leurs NFT. La solution : une collection LayerZero ONFT721A et un bridge de migration sur mesure qui garde la propriété intacte. Avec une prévente à plusieurs niveaux, des royalties ERC-2981, un partage de revenus pour les affiliés et un mint par lots optimisé en gas.",
         stack: ["LayerZero", "ERC721A", "ERC-2981", "Bridge"],
         liens: [],
       },
@@ -194,7 +194,7 @@ export const fr: Contenu = {
         chiffre: "134+",
         chiffreLabel: "achats on-chain",
         texte:
-          "Prix via oracle Chainlink, autorisation backend par signature ECDSA, paiement en BNB ou en ERC20. Transfert d'admin en deux étapes, rôles séparés, retrait d'urgence, module de vesting, et la dApp de prévente.",
+          "Le problème : vendre un token on-chain à un prix juste et à jour, seulement aux acheteurs validés, sans que les investisseurs puissent tout revendre au lancement. La solution : un prix en dollars via oracle Chainlink, une autorisation par signature ECDSA, le paiement en BNB ou en ERC20 et un module de vesting. Côté sécurité : transfert d'admin en deux étapes, rôles séparés, retrait d'urgence. Et la dApp de prévente.",
         stack: ["Chainlink", "ECDSA", "Vesting", "dApp"],
         adresse: "0xc470e8691a9bcdc081db971615060a17b3577543",
         liens: [
@@ -208,7 +208,7 @@ export const fr: Contenu = {
         titre: "Vault à routage de rendement",
         contexte: "Solidity · Foundry",
         chiffre: "", chiffreLabel: "",
-        texte: "Un vault ERC4626 qui répartit les dépôts entre plusieurs protocoles et se rééquilibre vers le meilleur APY, sans casser le prix des parts.",
+        texte: "Résout un problème simple : le meilleur rendement change sans arrêt d'un protocole à l'autre, et on le rate si on ne déplace pas ses fonds soi-même. Ce vault ERC4626 répartit les dépôts et se rééquilibre seul vers le meilleur APY, sans fausser le prix des parts.",
         stack: ["ERC4626", "Foundry"],
         liens: [{ label: "GitHub", href: "https://github.com/0xSylla/ERC4626-Vault-with-Automated-Yield-Routing" }],
       },
@@ -216,7 +216,7 @@ export const fr: Contenu = {
         titre: "Tirage cross-chain sans perte",
         contexte: "LayerZero · Chainlink VRF",
         chiffre: "", chiffreLabel: "",
-        texte: "Le rendement des dépôts finance le lot, le capital reste remboursable. Agrégation cross-chain via CCIP, tirage vérifiable via VRF.",
+        texte: "Résout le défaut des loteries : presque tout le monde y perd sa mise. Ici, seul le rendement des dépôts finance le lot, le capital reste remboursable, et le tirage est vérifiable (Chainlink VRF). Les dépôts de plusieurs chaînes sont regroupés via CCIP.",
         stack: ["CCIP", "VRF"],
         liens: [{ label: "GitHub", href: "https://github.com/0xSylla/No-Loss-Cross-Chain-Raffle" }],
       },
@@ -224,7 +224,7 @@ export const fr: Contenu = {
         titre: "NFT imbriqués",
         contexte: "ERC-6551 · ERC-1155",
         chiffre: "", chiffreLabel: "",
-        texte: "Des personnages ERC-721 qui portent des équipements ERC-1155 grâce aux comptes liés ERC-6551, avec des images composées en couches.",
+        texte: "Résout un manque des NFT de jeu : un personnage ne peut pas posséder ses objets, qui restent éparpillés dans le wallet. Grâce aux comptes liés ERC-6551, le personnage (ERC-721) porte lui-même ses équipements (ERC-1155) : le vendre, c'est vendre aussi son équipement. Son image se compose en couches.",
         stack: ["ERC-6551", "ERC-1155"],
         liens: [{ label: "GitHub", href: "https://github.com/0xSylla/Nestable-ERC721" }],
       },
@@ -232,7 +232,7 @@ export const fr: Contenu = {
         titre: "MintShield",
         contexte: "Launchpad NFT anti-bot",
         chiffre: "", chiffreLabel: "",
-        texte: "Mint par signature, quotas par wallet et liste blanche vérifiée par preuve de Merkle.",
+        texte: "Un launchpad NFT conçu pour régler le problème des bots pendant les mints, qui raflent l'offre avant les vrais collectionneurs. Mint autorisé par signature, quotas par wallet et liste blanche vérifiée par preuve de Merkle.",
         stack: ["Merkle", "EIP-191"],
         liens: [{ label: "GitHub", href: "https://github.com/0xSylla/MintShield-Scalable_AntiBot_System_For_NFTs_Mints" }],
       },
@@ -240,7 +240,7 @@ export const fr: Contenu = {
         titre: "NodePad Terminal",
         contexte: "Jeu on-chain · Base",
         chiffre: "", chiffreLabel: "",
-        texte: "Un jeu de stratégie idle entièrement on-chain : tu gères des nœuds virtuels pour gagner des tokens. Architecture Diamond, interface CRT rétro.",
+        texte: "Résout le manque de transparence des jeux « crypto » dont les règles tournent sur un serveur. Ici, toute la logique et les récompenses sont on-chain : tu gères des nœuds virtuels pour gagner des tokens. L'architecture Diamond (ERC-2535) permet de dépasser la limite de taille d'un contrat et d'ajouter des fonctions. Interface CRT rétro.",
         stack: ["ERC-2535", "Base"],
         liens: [
           { label: "GitHub", href: "https://github.com/0xSylla/NodePad-DiamondPattern-Version" },
